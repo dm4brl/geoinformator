@@ -9,3 +9,5 @@ If the server started successfully, but requests are sent to an invalid URL, the
 
 Geo-integration in this code is implemented using Google Maps API. In particular, the calculateDistanceAndTime function uses Google Maps API to calculate the distance and time between two locations (courier location and order location). This information can be included in the notification sent to the courier. Integration with Google Maps API provides geolocation capabilities in your app.
 
+The sendNotification function accepts a JSON request with notification data and the token of the device to which the notification should be sent. The feature then uses Firebase Cloud Messaging (FCM) to send the notification to the specified device.
+
